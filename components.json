@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "default",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "tailwind.config.js",
+    "css": "src/index.css",
+    "baseColor": "slate",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/utils",
+    "ui": "@/components/ui",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
+  },
+  "security": {
+    "note": "Aliases are configured for build-time resolution (e.g., via tsconfig.json or vite.config.js). Ensure aliases are restricted to project root and validated in build configuration to prevent path traversal. Implement the following mitigations: 1) Use absolute paths starting with '@/' to confine resolution within the project root. 2) Validate alias configurations in build tools (e.g., Vite, Webpack) to reject parent directory traversal patterns like '../'. 3) Consider using a security linter or pre-build script to audit path mappings."
+  }
+}
