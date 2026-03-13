@@ -2,18 +2,18 @@
   "name": "glass-engine-portfolio",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": ">=18.0.0"
-  },
   "scripts": {
+    "start": "vite",
     "build": "vite build",
-    "dev": "vite",
-    "start": "vite preview"
+    "dev": "vite"
   },
   "devDependencies": {
     "eslint": "^9.0.0",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "vite": "^3.0.0",
-    "react-refresh": "^0.11.0"
+    "eslint-plugin-react-hooks": "^7.0.1"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0"
   }
 }
