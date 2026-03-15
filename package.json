@@ -1,19 +1,21 @@
 {
-  "name": "glass-engine-portfolio",
-  "version": "0.1.0",
+  "name": "ptgui",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "vite",
-    "build": "vite build",
-    "dev": "vite"
-  },
-  "devDependencies": {
-    "eslint": "^9.0.0",
-    "eslint-plugin-react-hooks": "^7.0.1"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
   },
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.32.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "typescript": "^4.0.0",
+    "vite": "^2.0.0"
   }
 }
